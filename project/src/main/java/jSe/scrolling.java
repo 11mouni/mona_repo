@@ -15,6 +15,7 @@ public class scrolling {
 		driver.manage().window().maximize();
 		driver.get("https://www.browserstack.com");
 		js.executeAsyncScript("window.scrollBy(0,document.body.scrollHeight)");
+		System.out.println();
 
 	}
 }
