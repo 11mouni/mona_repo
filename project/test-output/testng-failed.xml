@@ -3,11 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="jSe.scrolling">
+      <class name="w3sch.testcase">
         <methods>
-          <include name="login"/>
+          <include name="login_with_Invaliduser_name_and_valid_password"/>
+          <include name="login_with_no_user_name_password"/>
+          <include name="validate_login_with_the_credentials"/>
+          <include name="login_with_only_password"/>
+          <include name="scrolling"/>
+          <include name="AfterMethod"/>
+          <include name="login_with_only_user_name_without_password"/>
+          <include name="login_with_valid_username_and_invalid_password"/>
+          <include name="beforeMethod"/>
+          <include name="openbrowser"/>
         </methods>
-      </class> <!-- jSe.scrolling -->
+      </class> <!-- w3sch.testcase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
