@@ -15,15 +15,16 @@ public class calendar {
 		driver.get("https://www.hyrtutorials.com/p/calendar-practice.html");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.manage().window().maximize();
-		By calDate = By.xpath("//input[@id='first_date_picker']");
-		WebElement cal_date = driver.findElement(calDate);
-		cal_date.click();
+//		By calDate = By.xpath("//input[@id='first_date_picker']");
+//		WebElement cal_date = driver.findElement(calDate);
+//		cal_date.click();
 		
 	//	String date = "20";			
 	//	driver.findElement(By.xpath("//table[@class='ui-datepicker-calendar']//a[text()='20']")).click();
 		String date = "25";
-		driver.findElement(By.xpath("//table[@class='ui-datepicker-calendar']//a[text()="+date+"]")).click();
-		driver.findElement(By.xpath("//table[@class='ui-datepicker-calendar']//td[not(contains(@class,'ui-datepicker-other-month'))]//a[text()='15']")).click();
+	//	driver.findElement(By.xpath("//table[@class='ui-datepicker-calendar']//a[text()="+date+"]")).click();
+		driver.findElement(By.xpath("//input[@id='second_date_picker']")).click();
+		driver.findElement(By.xpath("//table[@class='ui-datepicker-calendar']//td[not(contains(@class,'ui-datepicker-other-month'))]/a[text()="+date+"]")).click();
 		
 		
 		
