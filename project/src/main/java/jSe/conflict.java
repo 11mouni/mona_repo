@@ -7,6 +7,7 @@ public class conflict {
 		int y= 20;
 		int sum = x+y;
 		System.out.println(sum);
+		System.out.println("sum of X and Y" +sum);
 
 	}
 
