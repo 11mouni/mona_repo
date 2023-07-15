@@ -32,12 +32,12 @@ public class conflict {
 	        // Iterating over the ArrayList
 	        for (int number : numbers) {
 	            System.out.println(number);
-	        }
-		
-		
-		
-		
 
+	            
+	            
+	            
+	        }
+						
 	}
 
 }
