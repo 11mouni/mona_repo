@@ -1,10 +1,14 @@
 package w3sch;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class testcase extends common {
+import dev.failsafe.internal.util.Assert;
+
+public class testcase extends login1 {
 
 	@BeforeMethod
 	public void beforeMethod()
@@ -26,9 +30,11 @@ public class testcase extends common {
 	public static void openbrowser() throws InterruptedException
 	{
 		login1.Logo();
-		validationtoget.logoDisplay(true);
+		//validationtoget.logoDisplay(true);
+		assertTrue(logo().isDisplayed()," logo is not displayed");
 		login1.loginButton();
-		validationtoget.clickp(true);
+		//validationtoget.clickp(true);
+		assertTrue(false);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,500);");
 	}
